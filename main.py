@@ -28,6 +28,3 @@ if __name__ == '__main__':
             print("Thank you!")
         else:
             print("Please enter only available options")
-
-
-

@@ -33,12 +33,12 @@ class RandomPrimeGenerator:
 
     def generate_e(self, p, q):
         phi_of_n = (p - 1) * (q - 1)
-        num = rand.randrange(2 ** (16 - 1) + 1, 2 ** 16 - 1)
+        num = rand.randrange(2 ** (16 - 1) + 1, phi_of_n)
         while self.gcd(phi_of_n, num) != 1:
             num = rand.randrange(2 ** (16 - 1) + 1, 2 ** 16 - 1)
         print("random e for given p -", p, ",q-", q, "is", num)
 
 
-rpg = RandomPrimeGenerator()
-prime_1, prime_2 = rpg.generate_p_q()
-rpg.generate_e(prime_1, prime_2)
+# rpg = RandomPrimeGenerator()
+# prime_1, prime_2 = rpg.generate_p_q()
+# rpg.generate_e(prime_1, prime_2)

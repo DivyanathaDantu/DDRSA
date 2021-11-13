@@ -13,5 +13,5 @@ class RSADecryption:
         print("Decrypted msg is :-", dec_msg)
 
 
-rsa_dec = RSADecryption()
-rsa_dec.decrypt_msg(RSAConstants.msg_to_be_decrypted)
+# rsa_dec = RSADecryption()
+# rsa_dec.decrypt_msg(RSAConstants.msg_to_be_decrypted)

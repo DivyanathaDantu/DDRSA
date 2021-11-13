@@ -25,6 +25,6 @@ class RSAEncryption:
         print("Encrypted msg is :-", enc_msg)
 
 
-rsa_enc = RSAEncryption()
+# rsa_enc = RSAEncryption()
 
-rsa_enc.encrypt_msg(RSAConstants.msg_to_be_encrypted)
+# rsa_enc.encrypt_msg(RSAConstants.msg_to_be_encrypted)
