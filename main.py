@@ -2,6 +2,7 @@ from RSAConstants import RSAConstants
 from RSADecryption import RSADecryption
 from RSAEncryption import RSAEncryption
 from RandomPrimeGenerator import RandomPrimeGenerator
+from Signature import Signature
 
 if __name__ == '__main__':
     print("Welcome to RSA by Divyanatha Dantu. Please select an option to proceed")
@@ -12,7 +13,8 @@ if __name__ == '__main__':
         print("2. Generate e for given p,q")
         print("3. Encrypt msg")
         print("4. Decrypt msg")
-        print("5. Check signature \n")
+        print("5. Sign")
+        print("6. Verify Signature\n")
         usr_input = int(input())
         if usr_input == 1:
             RandomPrimeGenerator().generate_p_q()
@@ -24,6 +26,10 @@ if __name__ == '__main__':
             RSAEncryption().encrypt_msg(RSAConstants.msg_to_be_encrypted)
         elif usr_input == 4:
             RSADecryption.decrypt_msg(RSAConstants.msg_to_be_decrypted)
+        elif usr_input == 5:
+            Signature.sign()
+        elif usr_input == 6:
+            Signature.verify()
         elif usr_input == 0:
             print("Thank you!")
         else:
