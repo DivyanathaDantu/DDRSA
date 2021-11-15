@@ -11,8 +11,8 @@ class RSAConstants:
     d = SqrAndMultiImp.inverse_modulo(my_e, phiOfN)
 
     """Values for Encryption (partner's values)"""
-    N = 2566387231
-    e = 1985
+    N = 76602983
+    e = 44944441
 
     """ Messages """
     msg_to_be_encrypted = "Hi this is divyanath, hope this message reaches you in good health and hale !"
