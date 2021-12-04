@@ -18,12 +18,15 @@ if __name__ == '__main__':
         print("6. Verify Signature\n")
         usr_input = int(input())
         if usr_input == 1:
-            RandomPrimeGenerator().generate_p_q()
+            p, q = RandomPrimeGenerator().generate_p_q()
+            n = p * q
+            phiOfN = (p - 1) * (q - 1)
+            print("\n n-", n, " phiOfN -", phiOfN, "for given p -", p, "and q-", q)
         elif usr_input == 2:
             p = int(input("Enter p:"))
             q = int(input("Enter q:"))
             e = RandomPrimeGenerator().generate_e(p, q)
-            phiOfN = (p-1)*(q-1)
+            phiOfN = (p - 1) * (q - 1)
             d = SqrAndMultiImp.inverse_modulo(e, phiOfN)
             print("\n d for given e -", e, "is", d)
         elif usr_input == 3:

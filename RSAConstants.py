@@ -16,9 +16,7 @@ class RSAConstants:
 
     """ Messages """
     msg_to_be_encrypted = "Hi this is divyanath, hope this message reaches you in good health and hale !"
-    msg_to_be_decrypted = [963174423, 349833966, 2305336595, 987881663, 1658138511, 1946382762, 2192380799, 428669900,
-                           1810620741, 1022134689, 1118928640, 394727798, 1898002562, 862292826, 1051295317, 2546765952,
-                           2154768182, 772553931, 1094503398, 673325513, 772553931, 2302755166]
+    msg_to_be_decrypted = [987881663, 1658138511, 1946382762, 114993941, 2067727052, 280669318, 1204057221, 2101752276]
     """ Signatures """
     my_signature = "Divyanatha Reddy Dantu"
-    partners_signature = [1955477331, 1498083143, 1564897640, 1265472587, 2372376173]
+    partners_signature = [5788558, 19073533, 33400180, 15812084, 34969668]

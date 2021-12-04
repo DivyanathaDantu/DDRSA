@@ -37,6 +37,7 @@ class RandomPrimeGenerator:
         while self.gcd(phi_of_n, num) != 1:
             num = rand.randrange(2 ** (16 - 1) + 1, 2 ** 16 - 1)
         print("random e for given p -", p, ",q-", q, "is", num)
+        return num
 
 
 # rpg = RandomPrimeGenerator()
