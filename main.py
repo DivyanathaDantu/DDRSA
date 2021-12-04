@@ -3,6 +3,7 @@ from RSADecryption import RSADecryption
 from RSAEncryption import RSAEncryption
 from RandomPrimeGenerator import RandomPrimeGenerator
 from Signature import Signature
+from SqrAndMultiImp import SqrAndMultiImp
 
 if __name__ == '__main__':
     print("Welcome to RSA by Divyanatha Dantu. Please select an option to proceed")
@@ -10,7 +11,7 @@ if __name__ == '__main__':
     while int(usr_input) != 0:
         print("\n0. Exit")
         print("1. Generate Random Primes p,q")
-        print("2. Generate e for given p,q")
+        print("2. Generate e,d for given p,q")
         print("3. Encrypt msg")
         print("4. Decrypt msg")
         print("5. Sign")
@@ -21,7 +22,10 @@ if __name__ == '__main__':
         elif usr_input == 2:
             p = int(input("Enter p:"))
             q = int(input("Enter q:"))
-            RandomPrimeGenerator().generate_e(p, q)
+            e = RandomPrimeGenerator().generate_e(p, q)
+            phiOfN = (p-1)*(q-1)
+            d = SqrAndMultiImp.inverse_modulo(e, phiOfN)
+            print("\n d for given e -", e, "is", d)
         elif usr_input == 3:
             RSAEncryption().encrypt_msg(RSAConstants.msg_to_be_encrypted)
         elif usr_input == 4:
