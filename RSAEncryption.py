@@ -5,6 +5,7 @@ from SqrAndMultiImp import SqrAndMultiImp
 class RSAEncryption:
     def divide_msg(self, message):
         divided_msg = [message[i:i+3] for i in range(0, len(message), 3)]
+        print("chunks :-", divided_msg)
         msg_in_int = list()
         for chunk in divided_msg:
             msg_in_int.append(self.covert_string_to_int(chunk))
