@@ -19,4 +19,4 @@ class RSAConstants:
     msg_to_be_decrypted = [987881663, 1658138511, 1946382762, 114993941, 2067727052, 280669318, 1204057221, 2101752276]
     """ Signatures """
     my_signature = "Divyanatha Reddy Dantu"
-    partners_signature = [5788558, 19073533, 33400180, 15812084, 34969668]
+    partners_signature = [55647728, 17491099, 27997253, 74547410, 21382997]
